@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Innotek</title>
+
+    <link rel="stylesheet" href="../resources/css/common/common.css">
+    <link rel="stylesheet" href="../resources/css/modal.css">
+    <link rel="stylesheet" href="../resources/css/common/responsive.css">
+    <link rel="stylesheet" href="../resources/css/device.css">
+
+    <script src="../resources/js/library/jquery-3.7.1.min.js"></script>
+    <script src="../resources/js/common/common.js"></script>
+    <script src="../resources/js/common/modal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="header"></header>
+        <section class="main">
+            <div class="main-contents-wrap">
+                <div class="landing-title-wrap common-title-color">
+					<h2>
+						LG Innotek <b>WiFi</b>
+					</h2>
+					<p class="guide">
+						인증 후 국내 사업장 &#40;마곡, 구미, 파주, 안산, 광주, 평택&#41; 에서 무선랜 사용이 가능합니다.
+					</p>
+				</div>
+                <div class="contents__inner">
+                    <ul class="device-management-wrap">
+                        <li class="device-history-wrap">
+                            <div class="device-title-style">
+                                <h4>등록된 기기 정보</h4>
+                                <p class="guide">3개월 간 미사용 시 기기가 자동으로 인증 해제 됩니다.</p>
+                            </div>
+                            <ul class="device-history-list-wrap" id="deviceList">
+                                <!-- 등록 기기가 없을 경우 -->
+                                <!-- <li class="device-history-list">
+                                    등록된 기기가 없습니다.
+                                </li> -->
+
+                                <li class="device-history-list">
+                                    <h5 class="device-label">
+                                        iPad
+                                    </h5>
+                                    <label>
+                                        MAC Address &#58;
+                                        <input type="text" readonly="readonly" value="XX:XX:XX:XX:XX:XX"/>
+                                    </label>
+                                    <label>
+                                        등록일 &#58;
+                                        <input type="text" readonly="readonly" value="2020-08-01"/>
+                                    </label>
+                                    <button type="button" class="device-delete-button" onclick="commonTwoButtonModalOn()"></button>
+                                </li>
+                            </ul>
+                        </li>
+    
+                        <li class="device-information-wrap">
+                            <div class="device-title-style">
+                                <h4>현재 접속한 무선 단말 정보</h4>
+                            </div>
+                            <div class="addMenu__addressWrap">
+                                <div class="addMenu__addressWrap__inner">
+                                    <input id="deviceKindEtc" class="addDeviceNameInput" type="text" placeholder="별칭을 입력해 주세요.">
+                                    
+                                    <!-- 방문자 접속일 경우 -->
+                                    <!-- <label class="use-period-label">
+                                        사용기간 &#58; 
+                                        <input type="text" readonly="readonly" value="기간"/>
+                                    </label> -->
+    
+                                    <label class="mac-address-label">
+                                        MAC Address &#58; 
+                                        <input type="text" id="wifiMacAddress" readonly="readonly"/>
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button type="button" class="common-button-style-dark device-add-button">
+                        무선 네트워크 설정
+                    </button>
+                </div>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+
+    <div class="modal-position-style-wrap" id="modal-area"></div>
+</body>
+</html>

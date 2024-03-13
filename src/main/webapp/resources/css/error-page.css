@@ -1,0 +1,44 @@
+.etc-error-page {
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    color: var(--color-grey1);
+}
+
+.etc-error-page .main-contents-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    min-height: 36rem;
+    max-width: 90rem;
+    text-align: center;
+}
+
+.etc-error-page h3 {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    font-size: 6rem;
+    font-weight: 600;
+    height: 13.7rem;
+}
+
+.etc-error-page p {
+    height: 14.7rem;
+    margin: 4.2rem 0;
+    font-size: 2.1rem;
+    font-weight: 500;
+    overflow: auto;
+}
+
+.etc-error-page button {
+    border-radius: 0.5rem;
+    width: 27.9rem;
+    height: 6.3rem;
+    font-size: 2.1rem;
+}

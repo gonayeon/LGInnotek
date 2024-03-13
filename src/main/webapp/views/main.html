@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Innotek</title>
+
+    <link rel="stylesheet" href="../resources/css/common/common.css">
+    <link rel="stylesheet" href="../resources/css/modal.css">
+    <link rel="stylesheet" href="../resources/css/common/responsive.css">
+    <link rel="stylesheet" href="../resources/css/main.css">
+
+    <script src="../resources/js/library/jquery-3.7.1.min.js"></script>
+    <script src="../resources/js/common/common.js"></script>
+    <script src="../resources/js/common/modal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="header"></header>
+        <section class="main">
+            <div class="main-contents-wrap">
+                <div class="landing-title-wrap common-title-color">
+					<h2>
+						LG Innotek <b>WiFi</b>
+					</h2>
+					<p class="guide">
+						인증 후 국내 사업장 &#40;마곡, 구미, 파주, 안산, 광주, 평택&#41; 에서 무선랜 사용이 가능합니다.
+					</p>
+				</div>
+                <ul class="main-slide-wrap">
+                    <li class="main-slide-style">
+                        <a href="notices.html">
+                            <img src="../resources/img/icon/bell.svg" class="bell-icon" alt="bell icon">&nbsp;
+                            공지
+                        </a>
+                        <div>
+                            <ul class="main-top5-slide notice">
+                                <li>
+                                    <span>안내</span>
+                                    <a href="notices-detail.html">공지사항_00</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="main-slide-style">
+                        <a href="faqs.html">
+                            <img src="../resources/img/icon/bell.svg" class="bell-icon" alt="bell icon">&nbsp;
+                            FAQ
+                        </a>
+                        <div>
+                            <ul class="main-top5-slide">
+                                <li>
+                                    <span>가이드</span>
+                                    <a href="faqs-detail.html">FAQ_00</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="btnGroup">
+                    <button id="startLoginButton" class="common-button-style-red main-button-style" type="button" onclick="location.href='login-emp.html'">
+                        임직원 &#47; 협력사
+                    </button>
+                    <button class="common-button-style-red main-button-style" type="button" onclick="location.href='login-visit.html'">
+                        방문객
+                    </button>
+
+					<!-- 로그인 후 디바이스 관리 버튼만 존재 -->
+                    <!-- <button class="common-button-style-red main-button-style" type="button" onclick="location.href='device-management.html'">
+                        디바이스 관리
+                    </button> -->
+				</div>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+
+    <div class="modal-position-style-wrap" id="modal-area"></div>
+</body>
+</html>

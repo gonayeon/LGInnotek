@@ -1,0 +1,5 @@
+@media (max-width:840px), (max-height:890px) {
+    html {
+        font-size: 1.1vmin;
+    }
+}

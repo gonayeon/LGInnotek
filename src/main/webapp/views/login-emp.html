@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Innotek</title>
+
+    <link rel="stylesheet" href="../resources/css/common/common.css">
+    <link rel="stylesheet" href="../resources/css/modal.css">
+    <link rel="stylesheet" href="../resources/css/common/responsive.css">
+    <link rel="stylesheet" href="../resources/css/login.css">
+
+    <script src="../resources/js/library/jquery-3.7.1.min.js"></script>
+    <script src="../resources/js/common/common.js"></script>
+    <script src="../resources/js/common/modal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="header"></header>
+        <section class="main">
+            <div class="main-contents-wrap auth-login-wrap">
+                <div class="landing-title-wrap common-title-color">
+					<h2>
+						LG Innotek <b>WiFi</b>
+					</h2>
+					<p class="guide">
+						인증 후 국내 사업장 &#40;마곡, 구미, 파주, 안산, 광주, 평택&#41; 에서 무선랜 사용이 가능합니다.
+					</p>
+				</div>
+                <form id="loginForm">
+                    <div class="auto-login-contents">
+                        <ul class="login-wrap">
+                            <li>
+                                <div>
+                                    <label for="userId">SSO ID</label>
+                                    <input autofocus="autofocus" id="userId" autocomplete="off" type="text" name="username" placeholder="이메일 주소 &#64;innotek.com 제외 후 입력">
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <label for="userPw">비밀번호</label>
+                                    <input id="userPw" autocomplete="off" type="password" name="password">
+                                </div>
+
+                                <button type="button" id="loginBtn" class="common-button-style-red login-button-style" onclick="location.href='device-management.html'">로그인</button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+
+                <p id="error-msg" class="error-msg">
+                    <span>
+                        <!-- validation 문구 -->
+                        <!-- 로그인에 실패했습니다. 다시 입력해주세요.
+                        SSO ID를 입력해 주세요.
+                        존재하지 않는 SSO ID입니다. 다시 입력해 주세요.
+                        비밀번호를 입력해 주세요.
+                        비밀번호를 1회 잘못 입력하셨습니다. 비밀번호를 다시 확인해 주세요.
+                        비밀번호를 2회 잘못 입력하셨습니다. 비밀번호를 다시 확인해 주세요.
+                        비밀번호를 3회 잘못 입력하셨습니다. 비밀번호를 다시 확인해 주세요.
+                        비밀번호를 4회 잘못 입력하셨습니다. 비밀번호를 다시 확인해 주세요.
+                        비밀번호를 5회 잘못 입력하셨습니다. 해당 계정은 5분간 인증이 불가합니다. 
+                        5분간 잠긴계정입니다. 00:00 후 다시 시도해주세요. -->
+                    </span>
+                </p>
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+
+    <div class="modal-position-style-wrap" id="modal-area"></div>
+</body>
+</html>

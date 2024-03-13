@@ -1,0 +1,26 @@
+#header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 8rem;
+}
+
+#header > form {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.languageSelector {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	outline: none;
+    padding-left: 1rem;
+    padding-right: 3.4rem;
+    background: url(../../../resources/img/main/selectArrow_gray.svg) no-repeat center right 1rem/1.4rem;
+}
+
+.downloadUrl, .logout-btn {
+    color: var(--color-red-bright);
+}

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LG Innotek</title>
+
+    <link rel="stylesheet" href="../resources/css/common/common.css">
+    <link rel="stylesheet" href="../resources/css/modal.css">
+    <link rel="stylesheet" href="../resources/css/common/responsive.css">
+    <link rel="stylesheet" href="../resources/css/notice.css">
+
+    <script src="../resources/js/library/jquery-3.7.1.min.js"></script>
+    <script src="../resources/js/common/common.js"></script>
+    <script src="../resources/js/common/modal.js"></script>
+</head>
+<body>
+    <div class="container">
+        <header id="header"></header>
+        <section class="main">
+            <div class="contents-wrap">
+                <div class="contents-header">
+                    <div class="title-wrap">
+                        <h3 class="title-style">
+                            FAQ
+                        </h3>
+                    </div>
+                    <div class="search-wrap search-filter-wrap">
+                        <form>
+                            <select name="category" class="searchTypeCategory">
+                                <option value="">Total</option>
+                                <option value="J">회원가입</option>
+                                <option value="C">클라이언트 설치</option>
+                                <option value="R">휴직&#47;퇴직자</option>
+                                <option value="T">토큰 재발급</option>
+                                <option value="G">적용 가이드</option>
+                                <option value="E">기타</option>
+                            </select>
+                        </form>
+                        <div class="search-input">
+                            <form>
+                                <input class="searchBar" type="text" placeholder="검색어를 입력해주세요." autocomplete="off">
+                                <button type="submit" class="faq_searchBtn" id="searchBtn"></button>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- contents-header -->		
+                    
+                <div class="listMenu">
+                    <div class="faq-list">
+                        <table class="faq-table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="no">
+                                        번호
+                                    </th>
+                                    <th scope="col" class="category">
+                                        구분
+                                    </th>
+                                    <th scope="col" class="title">
+                                        제목
+                                    </th>
+                                    <th scope="col" class="writtenDate">
+                                        작성일
+                                    </th>
+                                    <th scope="col" class="author">
+                                        작성자
+                                    </th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- 공지사항이 없을 때 -->
+                                <!-- <tr><td colspan="5">게시물이 존재하지 않습니다.</td></tr> -->
+
+                                <tr>
+                                    <td>1</td>
+                                    <td>회원가입</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_01</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>적용 가이드</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_02</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>기타</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_03</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>기타</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_04</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>기타</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_05</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>토큰 재발급</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_06</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>적용 가이드</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_07</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>토큰 재발급</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_08</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>토큰 재발급</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_09</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>토큰 재발급</td>
+                                    <td style="cursor: pointer;" onclick="location.href='faqs-detail.html'">공지사항_10</td>
+                                    <td>2024-09-17</td>
+                                    <td>admin</td>
+                                </tr>
+                            </tbody>   
+                        </table>
+                    </div><!-- noticeList -->
+                    <div class="paging">
+                        <nav aria-label="Page navigation example">
+                            <ul id="pagination" class="pagination justify-content-center">
+                                <li class="prev">
+                                    <a href="#"><img src="../resources/img/icon/backToFront.svg"></a>
+                                </li>
+                                <li class="prev">
+                                    <a href="#"><img src="../resources/img/icon/backToPrev.svg"></a>
+                                </li>
+
+                                <li>
+                                    <a class="active" href="#">1</a>
+                                </li>
+                                <li>
+                                    <a href="#">2</a>
+                                </li>
+                                <li>
+                                    <a href="#">3</a>
+                                </li>
+                                <li>
+                                    <a href="#">4</a>
+                                </li>
+                                <li>
+                                    <a href="#">5</a>
+                                </li>
+                                <li class="prev">
+                                    <a href="#"><img src="../resources/img/icon/goToFoward.svg"></a>
+                                </li>
+                                <li class="prev">
+                                    <a href="#"><img src="../resources/img/icon/goToLast.svg"></a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div><!-- paging -->
+                </div><!-- listMenu -->
+            </div>
+        </section>
+        <footer id="footer"></footer>
+    </div>
+
+    <div class="modal-position-style-wrap" id="modal-area"></div>
+</body>
+</html>

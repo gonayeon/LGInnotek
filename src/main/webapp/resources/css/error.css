@@ -1,0 +1,47 @@
+.error-page {
+    position: fixed;
+    top: 8rem;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    color: var(--color-grey1);
+    text-align: center;
+}
+
+.error-page .main-contents-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+.error-page h2 {
+    color: var(--color-red-bright);
+    font-size: 20rem;
+    font-weight: 900;
+}
+
+.error-page b {
+    color: var(--color-red-bright);
+}
+
+.error-page h3 {
+    font-size: 6rem;
+    font-weight: 700;
+}
+
+.error-page p {
+    font-size: 2.1rem;
+    font-weight: 500;
+    margin: 7.9rem 0 10.9rem;
+}
+
+.error-page button {
+    border-radius: 0.5rem;
+    width: 27.9rem;
+    height: 6.3rem;
+    font-size: 2.1rem;
+}

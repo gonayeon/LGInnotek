@@ -1,0 +1,152 @@
+.main-contents-wrap {
+    width: 51.7rem;
+    margin: 0 auto;
+}
+
+.contents__inner {
+    width: 100%;
+    min-height: 45.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+}
+
+.device-management-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 3.9rem;
+}
+
+.device-title-style {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 3rem;
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.9rem;
+}
+
+.device-title-style h4 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+.device-title-style .guide {
+    font-size: 1rem;
+}
+
+.device-history-wrap .device-title-style {
+    background-color: var(--color-grey4);
+    color: var(--color-grey3);
+}
+
+.device-information-wrap .device-title-style {
+    background-color: var(--color-red-deep);
+    color: #fff;
+}
+
+.device-history-list-wrap {
+    max-height: 16.8rem;
+    padding-left: 0.6rem;
+    overflow: auto;
+}
+
+.device-history-list {
+    border-bottom: 0.1rem solid var(--color-grey4);
+    position: relative;
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+    color: var(--color-grey3);
+    line-height: 1.5;
+}
+
+.device-history-list:not(:last-child) {
+    margin-bottom: 3.5rem;
+}
+
+.device-history-list .device-label {
+    color: var(--color-grey1);
+}
+
+.device-information-wrap {
+    margin-bottom: 5.3rem;
+}
+
+.addMenu__addressWrap {
+    border-bottom: 0.1rem solid var(--color-grey4);
+    color: var(--color-grey3);
+    position: relative;
+    z-index: 0;
+    line-height: 1.5;
+}
+
+.addMenu__addressWrap::before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1.3rem;
+    height: 100%;
+    background-color: var(--color-red-deep);
+    margin-right: 1.2rem;
+}
+
+.addDeviceNameInput {
+    border: 0.1rem solid var(--color-grey4);
+    border-radius: 0.5rem;
+    width: 34rem;
+    height: 3rem;
+    padding: 0 0.8rem;
+    margin-left: 2.5rem;
+}
+
+.addMenu__addressWrap__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.addMenu__addressWrap__inner > label {
+    padding-left: 2.5rem;
+}
+
+.use-period-label {
+    border-bottom: 1px solid var(--color-grey4);
+    width: 100%;
+}
+
+.use-period-label input {
+    width: 83%;
+}
+
+.mac-address-label {
+    width: 100%;
+}
+
+.mac-address-label input {
+    width: 77%;
+}
+
+.device-delete-button {
+    position: absolute;
+    right: 0;
+    top: 42%;
+    background: url(../../resources/img/icon/trash.svg) no-repeat center/contain;
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.device-add-button {
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 5.5rem;
+}
+
+.error {
+    border: 0.1rem solid var(--color-red-deep);
+}

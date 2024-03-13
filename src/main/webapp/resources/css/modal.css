@@ -1,0 +1,400 @@
+/*=== 모달 공통 ===*/
+
+.modal-position-style-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background: rgba(0, 0, 0, .7);
+    z-index: 1000;
+}
+
+.modal-common-style {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    text-align: center;
+    color: var(--color-grey1);
+    overflow: auto;
+}
+
+.modal-top {
+    border-bottom: 0.1rem solid var(--color-grey4);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: var(--color-grey1);
+}
+
+.modal-content-background {
+    border: 0.1rem solid var(--color-grey4);
+    background: #F3F3F3;
+    width: 100%;
+    height: 100%;
+}
+
+/*=== 모달 위아래 여백 ===*/
+.modal-position-style-wrap {
+    top: 8rem;
+    height: calc(100% - 8rem - 8.5rem);
+}
+
+.modal-position-style-wrap .modal-common-style {
+    border-radius: 0.5rem;
+    width: 80%;
+    height: 70%;
+    max-width: 62.6rem;
+    max-height: 32.8rem;
+}
+
+.modal-position-style-wrap .modal-top {
+    height: 29%;
+}
+
+.modal-position-style-wrap .modal-title {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.modal-position-style-wrap .modal-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 41%;
+}
+
+.modal-position-style-wrap .modal-guide {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.modal-position-style-wrap .modal-bottom {
+    margin-top: 1.6rem;
+}
+
+.modal-position-style-wrap button {
+    border-radius: 0.5rem;
+    height: 3.8rem;
+    font-size: 2rem;
+}
+
+.modal-one-button-wrap button {
+    width: 17.5rem;
+}
+
+.modal-two-button-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.modal-two-button-wrap button {
+    width: 11.1rem;
+}
+
+/*=== 로딩모달 ===*/
+.loading-wrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.loading-top {
+    display: inline-block;
+    margin-bottom: 4.8rem;
+}
+
+.loading-image {
+    width: 7.2rem;
+    height: 7.2rem;
+    transform: rotate(0deg);
+    animation: loader infinite 3s linear;
+}
+
+@keyframes loader{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+
+.loading-text {
+    color: #fff;
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 5rem;
+    text-align: center;
+}
+
+/*=== 개인정보처리방침 ===*/
+
+.modal-position-style-wrap .modal-privacyPolicy {
+    border-radius: 0.5rem;
+    height: 85%;
+    width: 70%;
+    max-width: 62.6rem;
+    max-height: 70rem;
+}
+
+.modal-privacyPolicy .modal-top {
+    height: 13.7%;
+}
+
+.modal-privacyPolicy .modal-title {
+    font-size: 2.6rem;
+}
+
+.modal-privacyPolicy .modal-main {
+    height: 74.2%;
+    max-height: 52rem;
+    padding: 1.6rem 2.5rem;
+}
+
+.modal-privacyPolicy .modal-content-background {
+    border-radius: 0.5rem;
+    padding: 3.2rem 2.3rem;
+    overflow: auto;
+}
+
+.modal-privacyPolicy .modal-content-background::-webkit-scrollbar {
+    display: none;
+}
+
+.privacy-content article {
+    margin-bottom: 30px;
+}
+
+.privacy-content h4 {
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.privacy-content p {
+    margin-top: 40px;
+}
+
+.privacy-content table {
+    border-top: 2px solid #1f1f1f;
+    width: 100%;
+}
+
+.privacy-content th {
+    border: 1px solid #ddd;
+    background-color: #f5f6f8;
+    height: 79px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.privacy-content td {
+    border: 1px solid #ddd;
+    font-size: 12px;
+    padding: 30px 0;
+}
+
+.privacy-content ol {
+    list-style: auto;
+    margin-top: 40px;
+    padding-left: 15px;
+}
+
+.privacy-content li {
+    margin-bottom: 15px;
+}
+
+.modal-privacyPolicy .modal-bottom {
+    margin: 0;
+    height: 3.8rem;
+}
+
+.modal-privacyPolicy .check-button {
+    border-radius: 0.5rem;
+    max-width: 17.5rem;
+    max-height: 3.8rem;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+}
+
+/*=== 무선 네트워크 설정 모달 ===*/
+
+#modal-wrap:has(.network-setting-modal) {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.modal-position-style-wrap .network-setting-modal {
+    width: 85%;
+    height: 85%;
+    max-width: 90rem;
+    max-height: 45rem;
+}
+
+.network-setting-modal .modal-top {
+    height: 24%;
+    justify-content: flex-start;
+    padding: 0 4.7rem;
+}
+
+.network-setting-modal .modal-title {
+    font-size: 3.1rem;
+    font-weight: 400;
+}
+
+.network-setting-modal .modal-main {
+    display: block;
+    padding: 2.8rem 4.7rem;
+    height: auto;
+}
+
+.network-setting-modal .modal-content-background {
+    background-color: #F1F1F1;
+    height: 20rem;
+    padding: 1rem;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.network-setting-modal .modal-content-background::-webkit-scrollbar {
+    display: none;
+}
+
+.network-setting-modal .modal-content {
+    color: var(--color-red-deep);
+}
+
+.network-setting-modal .modal-guide {
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.network-setting-modal .modal-guide-bold {
+    margin-top: 3.5rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+
+.network-setting-modal .modal-bottom {
+    margin: 0;
+}
+
+.network-setting-modal .check-button {
+    border-radius: 0.6rem;
+    width: 12.6rem;
+    height: 4.7rem;
+    font-size: 2.4rem;
+    margin-top: 1rem;
+}
+
+/*=== MacOS용 가이드 모달 ===*/
+.modal-position-style-wrap .modal-macOs-guide {
+    height: 90%;
+    max-width: 65.8rem;
+    max-height: 55.4rem;
+}
+
+.modal-macOs-guide .modal-top {
+    position: relative;
+    height: 17%;
+    z-index: 0;
+}
+
+.modal-macOs-guide .modal-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-macOs-guide .modal-close-button {
+    position: absolute;
+    top: 50%;
+    right: 3.4rem;
+    transform: translateY(-50%);
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.modal-macOs-guide .modal-main {
+    padding: 2.4rem 2.9rem;
+    height: 41rem;
+}
+
+.modal-macOs-guide .modal-content-background {
+    border: none;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    width: 100%;
+    height: 36.2rem;
+}
+
+.modal-macOs-guide .modal-content {
+    position: relative;
+    display: flex;
+    background-color: #eee;
+    width: 400%;
+    height: 100%;
+}
+
+.modal-macOs-guide .modal-list {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-macOs-guide .modal-description {
+    display: flex;
+    justify-content: center;
+    padding-top: 3.5rem;
+    height: 11.7rem;
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.modal-macOs-guide .modal-description span {
+    color: var(--color-grey3);
+    font-size: 1.3rem;
+    line-height: 1;
+}
+
+.modal-macOs-guide .modal-image-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-macOs-guide .modal-image-wrap img {
+    width: 60%;
+    height: auto;
+}
+
+.modal-macOs-guide .modal-bottom {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.modal-macOs-guide .modal-arrow-button {
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+.modal-macOs-guide .modal-arrow-button path {
+    fill: var(--color-grey3);
+}
+
+.modal-macOs-guide .modal-arrow-button:disabled path {
+    fill: var(--color-grey4);
+}
