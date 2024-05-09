@@ -26,8 +26,8 @@ function commonFooterLoad() {
 
     if ($footer) {
         let html = `<h1 class="footer-logo">
-                        <a href="main.html">
-                            <img src="../resources/img/logo/lgLogo_ko.svg" class="logo-image" alt="LG이노텍">
+                        <a href="index.html">
+                            <img src="resources/img/logo/lgLogo_ko.svg" class="logo-image" alt="LG이노텍">
                         </a>
                     </h1>
                     <ul class="footer-menu-wrap">
